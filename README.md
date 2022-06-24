@@ -5,3 +5,4 @@ The system provides a simple data entry interface that will be user friendly to 
 I will use a free oublic api https://api.publicapis.org/entries
 The system is simple , three languages will be used , html , css and javascript. 
 We will have a log in and log off page , a form to fill that collects peoples data .
+Data will be stored once they are keyed in and can be accessed upon query.
