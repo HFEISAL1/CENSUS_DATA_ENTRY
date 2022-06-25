@@ -18,7 +18,7 @@ function getMealList(){
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
     .then(response => response.json())
     .then(data => {
-        /*let html = "";
+        let html = "";
         if(data.meals){
             data.meals.forEach(meal => {
                 html += `
@@ -43,8 +43,8 @@ function getMealList(){
     });
 }
 
-*/
-// get recipe of the meal
+
+/*// get recipe of the meal
 function getMealRecipe(e){
     e.preventDefault();
     if(e.target.classList.contains('recipe-btn')){
@@ -54,7 +54,7 @@ function getMealRecipe(e){
         .then(data => mealRecipeModal(data.meals));
     }
 }
-
+*/
 // create a modal
 function mealRecipeModal(meal){
     console.log(meal);
