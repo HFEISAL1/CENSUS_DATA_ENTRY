@@ -71,6 +71,6 @@ function mealRecipeModal(meal){
         </div>
         
     `;
-    /*mealDetailsContent.innerHTML = html;
+    mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
-}*/
+}
