@@ -44,7 +44,7 @@ function getMealList(){
 }
 
 
-/*// get recipe of the meal
+// get recipe of the meal
 function getMealRecipe(e){
     e.preventDefault();
     if(e.target.classList.contains('recipe-btn')){
@@ -54,7 +54,7 @@ function getMealRecipe(e){
         .then(data => mealRecipeModal(data.meals));
     }
 }
-*/
+
 // create a modal
 function mealRecipeModal(meal){
     console.log(meal);
@@ -71,6 +71,6 @@ function mealRecipeModal(meal){
         </div>
         
     `;
-    mealDetailsContent.innerHTML = html;
+    /*mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
-}
+}*/
