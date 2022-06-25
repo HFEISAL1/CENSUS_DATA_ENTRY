@@ -38,12 +38,12 @@ function getMealList(){
             html = "Sorry, we didn't find any meal!";
             mealList.classList.add('notFound');
         }
-*/
+
         mealList.innerHTML = html;
     });
 }
 
-
+*/
 // get recipe of the meal
 function getMealRecipe(e){
     e.preventDefault();
