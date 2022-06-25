@@ -32,7 +32,7 @@ function getMealList(){
                         </div>
                     </div>
                 `;
-            });
+            }); */
             mealList.classList.remove('notFound');
         } else{
             html = "Sorry, we didn't find any meal!";
