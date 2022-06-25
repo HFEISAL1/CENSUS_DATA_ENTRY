@@ -1,78 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> <title>MODERN CENSUS DATA COLLECTION</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Meal For Your Best</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <form>
-        <div>
-            <label for="firstName">First name:</label>
-            <input type="text" id="firstName" name="firstName" value="">
-        </div>
-            <div><label for="lastName">Last name:</label>
-            <input type="text" id="lastName" name="lastName" value="">
-        </div>
-        <div>
-            <label for="idNumber">Identification Number:</label>
-            <input type="text" id="idNumber" name="identification Number" value="">
-        </div>
-            <div>
-                <label for="KRA PIN">KRA PIN:</label>
-                <input type="text" id="KRA PIN" name="kra Pin" value="">
-            </div>
-            <div>
-                <label for="Family Members">Family Members:</label>
-                <input type="text" id="family Members" name="family Members" value="">
-            </div>
-            <div> 
-                <label for="County">County:</label>
-                <input type="text" id="County" name="County" value="">
-            </div>
-            <div>
-                <label for="Gender">Sex:</label>
-                <input type="text" id="Gender" name="Gender" value="">
-            </div>
-            <div>
-                <label for="Marital Status">Marital Status:</label>
-                <input type="text" id="marital Status" name="marital Status" value="">
-            </div>
-            <div>
-                <label for="numberOfChildren">Number Of Children:</label>
-            <input type="text" id="numberOfChildren" name="numberOfChildren" value="">
-            </div>
-            <div>
-                <label for="Assets Owned">Assets Owned:</label>
-            </div>
-    
-            check (li)
-            <li>car</li>
-            <li>bike</li>
-            <li>tuktuk</li>
-            <li>motorcycle</li>
-            <li>boat</li>
-            <li>house</li>
+  
+  <div class = "container">
+    <div class = "wrapper">
+      <div class = "meal-search">
+        <h2 class = "title">Find Meals For Your Ingredients</h2>
+        <blockquote>Really try next time <br>
+          
+        </blockquote>
 
-            
-                <label for="Average Income">Average Income:</label>
-                <input type="text" id="average Income" name="average Income" value=""
-                
-                div<div>
-                <input type="submit" value="Submit" id="submit" onclick="submit()">
-            </div>
-            
-            <script>
-                document.getElementById("submit").addEventListener("click",submit)
-                function submit(){
-                console.log("hello")
-                }
-                </script>
-            
-      </form>
+        <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter an any type of food you like" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class = "meal-result">
+        <h2 class = "title">Your Search Results:</h2>
+        <div id= "meal">
+         
+        </div>
+      </div>
+
+
+      <div class = "meal-details">
+        <!-- recipe close btn -->
+        <button type = "button" class = "btn close-btn-btn" id = "close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
       
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src = "index.js"></script>
 </body>
 </html>
